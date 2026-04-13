@@ -1,4 +1,6 @@
-const Teoria = () => {
+const Teoria = (props) => {
+    console.log(props.cursoProps)
+
   return (
     <section>
       <h2>Teoria de react</h2>
@@ -29,7 +31,7 @@ const Teoria = () => {
       </p>
       <h2>Practica de props</h2>
       <div className="alert alert-primary" role="alert">
-        Comision: - Curso:
+        Comision: {props.comisionProps} - Curso: {props.cursoProps}
       </div>
     </section>
   );
